@@ -199,7 +199,7 @@ DELETE /atendimentos/:id
 
 ## Autor
 
-Vinicius Soares
+Vinicius Soares e Kendra Suamy
 
 Projeto acadêmico desenvolvido para a disciplina de Tecnologias para Internet.
 
