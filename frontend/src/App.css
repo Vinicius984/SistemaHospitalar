@@ -1,0 +1,229 @@
+css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #0f766e;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #374151;
+  text-align: center;
+}
+
+p {
+  color: #6b7280;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 12px 18px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 3px;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+.btn-editar {
+  background: #2563eb;
+}
+
+.btn-editar:hover {
+  background: #1d4ed8;
+}
+
+.btn-excluir {
+  background: #dc2626;
+}
+
+.btn-excluir:hover {
+  background: #b91c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background: #0f766e;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background: #f0fdfa;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d1d5db;
+  margin: 40px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px auto;
+  background: #0f766e;
+  padding: 22px;
+  border-radius: 14px;
+  max-width: 1100px;
+}
+
+.menu a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #d1fae5;
+}
+
+.titulo-home {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.icone-hospital {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.titulo-home h1 {
+  font-size: 72px;
+  margin: 0;
+  color: #0f766e;
+}
+
+.titulo-home p {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #6b7280;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.card {
+  background: white;
+  padding: 40px 20px;
+  min-height: 220px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icone {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 0;
+  color: #0f766e;
+  font-size: 22px;
+}
+
+.card span {
+  display: block;
+  margin-top: 25px;
+  font-size: 52px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.atalhos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.atalhos a {
+  background: white;
+  padding: 20px 35px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  color: #0f766e;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.atalhos a:hover {
+  transform: translateY(-5px);
+}
+
