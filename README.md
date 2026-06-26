@@ -84,22 +84,35 @@ A aplicação foi desenvolvida utilizando React no frontend, Node.js e Express n
 
 ## Estrutura do Projeto
 
-medcore-system/
+SistemaHospitalar/
 
 ├── backend/
-
-│ ├── package.json
-
-│ └── src/
-
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .gitignore
+│
 ├── frontend/
-
-│ ├── package.json
-
-│ └── src/
-
+│   ├── public/
+│   ├── src/
+│   │   ├── componentes/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── .gitignore
+│
 ├── .gitignore
-
 └── README.md
 
 ---
