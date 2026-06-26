@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import api from "../services/api";
-import { Link } from "react-router-dom";
 import Menu from "../componentes/Menu";
 
 function Home() {
@@ -33,40 +32,63 @@ function Home() {
         <div>
             <Menu />
 
-            <div className="titulo-home">
-                <div className="icone-hospital">🏥</div>
-                <h1>MedCore System</h1>
-                <p>Sistema Integrado de Gestão Hospitalar</p>
-            </div>
+            <section className="painel-hospitalar">
+                <div>
+                    <h1>Dashboard Hospitalar</h1>
+                    <p>Visão geral operacional do MedCore System</p>
+                </div>
+
+            </section>
 
             <div className="dashboard-cards">
                 <div className="card">
-                    <div className="card-icone">👤</div>
+                    <small>Total cadastrado</small>
                     <h3>Pacientes</h3>
                     <span>{totais.pacientes}</span>
                 </div>
 
                 <div className="card">
-                    <div className="card-icone">🩺</div>
+                    <small>Equipe cadastrada</small>
                     <h3>Profissionais</h3>
                     <span>{totais.profissionais}</span>
                 </div>
 
                 <div className="card">
-                    <div className="card-icone">🏥</div>
+                    <small>Áreas clínicas</small>
                     <h3>Especialidades</h3>
                     <span>{totais.especialidades}</span>
                 </div>
 
                 <div className="card">
-                    <div className="card-icone">📋</div>
+                    <small>Registros clínicos</small>
                     <h3>Atendimentos</h3>
                     <span>{totais.atendimentos}</span>
                 </div>
             </div>
 
-            <hr />
+            <section className="resumo-operacional">
+                <h2>Resumo operacional</h2>
 
+                <div className="linha-resumo">
+                    <span>Pacientes cadastrados no sistema</span>
+                    <strong>{totais.pacientes}</strong>
+                </div>
+
+                <div className="linha-resumo">
+                    <span>Profissionais disponíveis para atendimento</span>
+                    <strong>{totais.profissionais}</strong>
+                </div>
+
+                <div className="linha-resumo">
+                    <span>Especialidades médicas cadastradas</span>
+                    <strong>{totais.especialidades}</strong>
+                </div>
+
+                <div className="linha-resumo">
+                    <span>Atendimentos registrados</span>
+                    <strong>{totais.atendimentos}</strong>
+                </div>
+            </section>
         </div>
     );
 }
